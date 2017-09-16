@@ -1,0 +1,20 @@
+---
+
+Heyo, I bet you forgot what's going on. I'm looking in my ~/openrave_stuff 
+directory and there is just a bunch of junk haha. Well your openrave
+simulation lives in ~/openrave_stuff/proj. As of right now the main script
+is called test.py. In order to get stuff to run you must:
+    source ~/rosTutorial/catkin_ws/devel/setup.sh
+    roscore
+    roslaunch gpd tutorial1.launch
+
+--- 
+
+Once you're re-adjusted check out Andrea's tutorial2 file located in: 
+~/rosTutorial/catkin_ws/src/gpd/launch/tutorial2.launch
+Insert an ipdb statement after idx is assigned. Then figure out what format the 
+idx and dist are. See how they integrate into openrave movement.
+
+In order to use Andreas's point cloud index filtering I need to use tutorial 2 and change the publisher in my script. I now need to publish to /cloud_indexed instead of /detect_grasps
+
+After that I need investigate the format of the message of the filtered pointcloud (and indexes) -- starting on line 42 in ~/openrave_stuff/proj/filter.py

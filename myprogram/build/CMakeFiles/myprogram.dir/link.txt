@@ -1,0 +1,1 @@
+/usr/bin/c++        -L/usr/lib/x86_64-linux-gnu -L/usr/lib CMakeFiles/myprogram.dir/myprogram.cpp.o  -o myprogram  -L/usr/local/lib -rdynamic -lopenrave0.9 -lopenrave0.9-core -lboost_thread -llog4cxx -Wl,-rpath,/usr/local/lib: 
